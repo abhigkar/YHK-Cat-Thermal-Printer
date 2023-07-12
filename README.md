@@ -2,6 +2,9 @@
 
 Mini **cat/rabbit** **thermal** printer of the **YHK** type
 
+<img src="https://raw.githubusercontent.com/abhigkar/YHK-Cat-Thermal-Printer/main/images/Cat-printer.jpeg"  width="300">
+<img src="https://raw.githubusercontent.com/abhigkar/YHK-Cat-Thermal-Printer/main/images/default-test-print.png"  width="300">
+
 This is yet another project with a **Cat/Rabbit thermal printer**. Other GitHub sources are also accessible, however none of them were successful for me because they all used the Cat-Printer with BLE protocol.
 
 Unfortunately, my cat-printer uses a different firmware version that is based on the Classic bluetooth protocol rather than the GATT based protocol. **YHK-XXXX** was broadcast by my printer. The last four characters of the printer's **MAC address** are XXXX.
@@ -9,6 +12,8 @@ Unfortunately, my cat-printer uses a different firmware version that is based on
 The Android and iOS app named **WalkPrint** is compatible with my cat printer. Although the app is worthless, some features need logging in.
 
 My starting point: I was motivated from [This blogpost](https://werwolv.net/blog/cat_printerhttps:/) and planned to have my own printer. I did spent some time working on the [bitbank2/Thermal_Printer](https://github.com/bitbank2/Thermal_Printer) project, but I soon found that since my printer is different so no other code will run on it.
+
+You can also read the full product review [here](https://hackspace.raspberrypi.com/articles/bluetooth-cat-thermal-printer-review)
 
 Other reference projects [repositories](https://github.com/JJJollyjim/catprinter)
 
@@ -32,7 +37,6 @@ Therefore, everything is straightforward. I attempted to send the same commands 
 ### The Final Result 👀️
 
 To make this functional, the next task was to produce the data payload from my script. I went back and pulled three routines from the decompiled code to capture the BITMAP, transform it to 1 Bit pictures, and append some bytes as file headers. This step was more difficult because I was only able to obtain the function name. I then tried writing the similler routines in some other Python code, and it succeeded.
-
 
 ### How to use the script? 🎉️
 
