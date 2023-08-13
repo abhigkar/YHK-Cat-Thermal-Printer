@@ -46,3 +46,8 @@ To make this functional, the next task was to produce the data payload from my s
 4. Run sdptool add --channel=N SP, where **"N"** is the channel, remember this as you will need this in the script. I have selected 2 in my case.
 5. Run sudo rfcomm bind **N** xx:xx:xx:xx:xx:xx, N  = channel = port
 6. Run cat-printer.py
+7. 
+
+### Notes: Usefull commands
+sdptool add --channel=2 SP
+sudo rfcomm connect /dev/rfcomm0 XX:XX:XX:XX:XX:XX 2
