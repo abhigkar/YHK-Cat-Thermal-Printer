@@ -130,7 +130,7 @@ getPrinterProductInfo(s)
 sleep(0.5)
 
 #Read Image File
-#img = PIL.Image.open("Turtle.jpg")
+img = PIL.Image.open("Turtle.jpg")
 
 #Create image from text
 #text = "Line 1\nLine 2\nLine 3"
